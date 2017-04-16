@@ -14,7 +14,7 @@ setup(
     packages=find_packages(where=('accessor',)),
     keywords="accessor attribute key index resolve",
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Programming Language :: Python",
         "Environment :: Plugins",

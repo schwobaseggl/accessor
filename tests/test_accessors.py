@@ -81,6 +81,3 @@ class AccessorTest(TestCase):
     def test_nested_index_bits_fails(self):
         accessor = A('1.__len__')
         self.assertEqual(accessor.resolve(self.index_obj), None)
-
-    def test_fail_loud_accessor(self):
-        pass
