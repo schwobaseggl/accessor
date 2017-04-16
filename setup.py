@@ -30,7 +30,7 @@ setup(
     author_email='veit.rueckert@web.de',
     url='http://github.com/schwobaseggl/accessor',
     download_url='http://github.com/schwobaseggl/accessor/archive/{}.tar.gz'.format(__version__),
-    packages=find_packages(where=('accessor',)),
+    packages=['accessor'],
     keywords="accessor attribute key index resolve",
     classifiers=CLASSIFIERS,
     install_requires=REQUIREMENTS,
