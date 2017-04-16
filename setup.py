@@ -3,6 +3,24 @@ from setuptools import setup, find_packages
 
 from accessor import __version__
 
+CLASSIFIERS = [
+    'Development Status :: 2 - Pre-Alpha',
+    'Framework :: Django',
+    'Environment :: Plugins',
+    'Intended Audience :: Developers',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 2',
+    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.4',
+    'Programming Language :: Python :: 3.5',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'License :: OSI Approved :: GNU General Public License (GPL)'
+]
+
+REQUIREMENTS = []
+
 setup(
     name='accessor',
     version=__version__,
@@ -10,17 +28,9 @@ setup(
     long_description=open('README.rst').read(),
     author='Veit Rückert',
     author_email='veit.rueckert@web.de',
-    maintainer='Veit Rückert',
-    maintainer_email='veit.rueckert@web.de',
     url='http://github.com/schwobaseggl/accessor/archive/v{}.zip'.format(__version__),
     packages=find_packages(where=('accessor',)),
     keywords="accessor attribute key index resolve",
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
-        "Programming Language :: Python",
-        "Environment :: Plugins",
-        "License :: OSI Approved :: GNU General Public License (GPL)"
-    ],
-    install_requires=[],
+    classifiers=CLASSIFIERS,
+    install_requires=REQUIREMENTS,
 )
