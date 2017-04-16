@@ -16,7 +16,7 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 3.4',
     'Programming Language :: Python :: 3.5',
     'Topic :: Software Development :: Libraries :: Python Modules',
-    'License :: OSI Approved :: GNU General Public License (GPL)'
+    'License :: OSI Approved :: MIT License'
 ]
 
 REQUIREMENTS = []
@@ -28,7 +28,8 @@ setup(
     long_description=open('README.rst').read(),
     author='Veit Rückert',
     author_email='veit.rueckert@web.de',
-    url='http://github.com/schwobaseggl/accessor/archive/v{}.zip'.format(__version__),
+    url='http://github.com/schwobaseggl/accessor',
+    download_url='http://github.com/schwobaseggl/accessor/archive/{}.tar.gz'.format(__version__),
     packages=find_packages(where=('accessor',)),
     keywords="accessor attribute key index resolve",
     classifiers=CLASSIFIERS,
